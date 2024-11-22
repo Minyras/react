@@ -1,0 +1,9 @@
+.wine {
+  border: 1px solid black;
+  width: 300px;
+  margin-bottom: 15px;
+  text-align: center;
+  span {
+    color: #868686;
+  }
+}
