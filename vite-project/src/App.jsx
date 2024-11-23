@@ -1,10 +1,12 @@
 import "./App.css";
-import Button from "./components/Button";
+// import Button from "./components/Button";
+import SubscribeButton from "./components/SubscribeButton";
 
 function App() {
   return (
     <>
-      <Button />
+      {/* <Button /> */}
+      <SubscribeButton />
     </>
   );
 }
