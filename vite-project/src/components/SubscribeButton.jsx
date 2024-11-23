@@ -2,11 +2,24 @@ import { Component } from "react";
 
 class SubscribeButton extends Component {
   state = {
-    message: "Click here",
+    text: "Click here",
+    clicked: false,
+  };
+  handleClick = () => {
+    this.clicked = !this.clicked;
+    this.setState({ text: "clicked" });
   };
   render() {
-    const { message } = this.state;
-    return <button type="button">{message}</button>;
+    const { text } = this.state;
+    return (
+      <button
+        className={this.clicked ? "active" : ""}
+        onClick={this.handleClick}
+        type="button"
+      >
+        {text}
+      </button>
+    );
   }
 }
 
